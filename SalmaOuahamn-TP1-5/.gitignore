@@ -1,5 +1,6 @@
 # Environnement Python
 .venv/
+.venv311/
 __pycache__/
 *.pyc
 *.egg-info/
@@ -12,9 +13,11 @@ build/
 # Artefacts lourds (DVC et MLflow à partir de la semaine 7)
 models/*
 !models/.gitkeep
+!models/metrics.json
 data/*
 !data/.gitkeep
 !data/sample_reviews.csv
+!data/avis_exemple.csv
 mlruns/
 mlflow.db
 
@@ -23,6 +26,7 @@ mlflow.db
 .idea/
 .DS_Store
 Thumbs.db
+desktop.ini
 
 # Tests
 .pytest_cache/
